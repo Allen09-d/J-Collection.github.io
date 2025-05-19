@@ -1,0 +1,247 @@
+/* Reset default box model for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Base body styles and typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles - navigation bar */
+header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header link styles */
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation menu layout */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+
+/* Navigation link styles */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Navigation hover effects */
+nav a:hover {
+    color: #e63946;
+    transform: scale(1.05);
+}
+
+/* intro section styles */
+#intro {
+    background: url("a1bg.jpg") no-repeat center center/cover ;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+/* Overlay for intro section */
+#intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* intro content positioning */
+.intro-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* intro heading styles */
+#intro h1 {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* intro paragraph styles */
+#intro p {
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styles */
+.btn {
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    text-shadow: none;
+}
+
+/* Button hover effects */
+.btn:hover {
+    background-color: #d62839;
+    transform: scale(1.05);
+}
+
+/* Shop section layouts */
+#shop {
+    padding: 40px 20px;
+    display: inline;
+}
+
+#shop2 {
+    padding: 40px 20px;
+    display: inline;
+}
+
+/* Shop section heading */
+#shop h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for product display */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+
+/* Individual product card styles */
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Product card hover effect */
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Product image styles */
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Product title styles */
+.grid-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Product price styles */
+.grid-item p {
+    font-size: 18px;
+    color: #e63946;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer social links container */
+footer .socials {
+    margin-top: 10px;
+}
+
+/* Footer social link styles */
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Footer social link hover effect */
+footer .socials a:hover {
+    color: #e63946;
+}
+
+/* intro section button styles */
+#intro .Hbutton {
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* intro button specific styles */
+#intro .Hbutton a {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    text-shadow: none;
+}
+
+/* intro button hover effect */
+#intro .Hbutton a:hover {
+    background-color: #d62839;
+    transform: scale(1.05);
+    cursor: pointer;
+}

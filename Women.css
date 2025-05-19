@@ -1,0 +1,250 @@
+/* Reset default box model */
+* {
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header link styles */
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+
+/* Navigation link styles */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Navigation hover effects */
+nav a:hover {
+    color: #e63946;
+    transform: scale(1.05);
+}
+
+/* Women section styles */
+#women {
+    color: rgb(0, 0, 0);
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    background-image: url('womenbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Women section overlay */
+#women::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+/* Z-index adjustment for white elements */
+.white{
+    z-index: 5;
+}
+
+/* Women section text and button styles */
+#women h1, #women .btn-1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Women section heading styles */
+#women h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Women section paragraph styles */
+#women p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Primary button styles */
+.btn-1 {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Primary button hover effects */
+.btn-1:hover {
+    background-color: #d62839;
+    transform: scale(1.1);
+}
+
+/* Secondary button styles */
+.btn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Secondary button hover effects */
+.btn:hover {
+    background-color: #d62839;
+    transform: scale(1.1);
+}
+
+#shop {
+    padding: 40px 20px;
+    display: inline;
+}
+
+#shop2 {
+    padding: 40px 20px;
+    display: inline;
+}
+
+#shop3 {
+    padding: 40px 20px;
+    display: inline;
+}
+
+#shop h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+
+/* Product card styles */
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Product card hover effects */
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Product image styles */
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Product title styles */
+.grid-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Product price styles */
+.grid-item p {
+    font-size: 18px;
+    color: #e63946;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer social links container */
+footer .socials {
+    margin-top: 10px;
+}
+
+/* Footer social link styles */
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Footer social link hover effects */
+footer .socials a:hover {
+    color: #e63946;
+}
